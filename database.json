@@ -1,0 +1,126 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Làm bài tập Javascript",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Nấu cơm",
+      "status": false
+    },
+    {
+      "title": "Học thêm Javascript 2",
+      "status": false,
+      "id": 4
+    },
+    {
+      "title": "Học thêm CSS",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "Học thêm HTML",
+      "status": true,
+      "id": 6
+    },
+    {
+      "title": "Học thêm JS CSS",
+      "status": true,
+      "id": 7
+    },
+    {
+      "title": "Học thêm JS CSS HTML",
+      "status": true,
+      "id": 8
+    },
+    {
+      "title": "Học thêm Fetch",
+      "status": false,
+      "id": 9
+    },
+    {
+      "title": "Học thêm Array",
+      "status": false,
+      "id": 10
+    },
+    {
+      "title": "Học thêm String",
+      "status": true,
+      "id": 11
+    },
+    {
+      "title": "Làm gì chua",
+      "status": false,
+      "id": 12
+    },
+    {
+      "title": "new todo 1",
+      "status": false,
+      "id": 13
+    },
+    {
+      "title": "new todo 2",
+      "status": false,
+      "id": 14
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Cái gì cũng được",
+      "image": [
+        "https://images.unsplash.com/photo-1644982653424-1bfed7f972a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1089&q=80",
+        "https://images.unsplash.com/photo-1655461078832-117d004de269?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+        "https://images.unsplash.com/photo-1649859396073-13ff3244ec1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      ],
+      "price": 5000000,
+      "rating": 5,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa facilis illum doloremque eaque magni consectetur eligendi laudantium necessitatibus ab possimus omnis eum, nobis quam laboriosam odit optio fugiat sint!"
+    },
+    {
+      "id": 2,
+      "name": "Tên gì cũng được",
+      "image": [
+        "https://images.unsplash.com/photo-1655465184678-548fb85fa74a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+        "https://images.unsplash.com/photo-1655461078832-117d004de269?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+        "https://images.unsplash.com/photo-1648737119359-510d4f551382?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+      ],
+      "price": 1000000,
+      "rating": 4.5,
+      "size": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa facilis illum doloremque eaque magni consectetur eligendi laudantium necessitatibus ab possimus omnis eum, nobis quam laboriosam odit optio fugiat sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa facilis illum doloremque eaque magni consectetur eligendi laudantium necessitatibus ab possimus omnis eum, nobis quam laboriosam odit optio fugiat sint!"
+    },
+    {
+      "id": 3,
+      "name": "Tên gì đó mây mây",
+      "image": [
+        "https://images.unsplash.com/photo-1655469791360-e83bd76b7e17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1638913972776-873fc7af3fdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1648737119359-510d4f551382?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+      ],
+      "price": 800000,
+      "rating": 4,
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa facilis illum doloremque eaque magni consectetur eligendi laudantium necessitatibus ab possimus omnis eum, nobis quam laboriosam odit optio fugiat sint! Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  ]
+}
