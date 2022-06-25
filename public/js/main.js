@@ -89,30 +89,30 @@ const toggleStatus = async (id) => {
   }
 };
 
-// // lọc công việc theo trạng thái
-// Array.from(todoOptionEls).forEach((input) => {
-//   input.addEventListener("change", () => {
-//     let option = input.value;
+// lọc công việc theo trạng thái
+Array.from(todoOptionEls).forEach((input) => {
+  input.addEventListener("change", () => {
+    let option = input.value;
 
-//     let todosFilter = [];
-//     switch (option) {
-//       case "all":
-//         todosFilter = [...todos];
-//         break;
-//       case "active":
-//         todosFilter = todos.filter((todo) => todo.status == true);
-//         break;
-//       case "unactive":
-//         todosFilter = todos.filter((todo) => todo.status == false);
-//         break;
+    let todosFilter = [];
+    switch (option) {
+      case "all":
+        todosFilter = [...todos];
+        break;
+      case "active":
+        todosFilter = todos.filter((todo) => todo.status == true);
+        break;
+      case "unactive":
+        todosFilter = todos.filter((todo) => todo.status == false);
+        break;
 
-//       default:
-//         todosFilter = [...todos];
-//         break;
-//     }
-//     renderTodo(todosFilter);
-//   });
-// });
+      default:
+        todosFilter = [...todos];
+        break;
+    }
+    renderTodo(todosFilter);
+  });
+});
 
 const addTodo = async () => {
   try {
@@ -154,46 +154,31 @@ todoInputEl.addEventListener("keydown", (event) => {
   }
 });
 
-// // lấy dữ liệu từ localstorage
-// const getDataFromLocalstorage = () => {
-//   let data = localStorage.getItem("todos");
-//   if (data) {
-//     todos = JSON.parse(data);
-//   } else {
-//     todos = [];
-//   }
-//   renderTodo(todos);
-// };
+// update todo
+const updateTodo = (id) => {
+  const text = document.querySelector(`.text${id}`);
 
-// // lưu dữ liệu vào localstorage
-// const setDataToLocalStorage = (arr) => {
-//   localStorage.setItem("todos", JSON.stringify(arr));
-//   renderTodo(arr);
-// };
+  text.previousElementSibling.classList.toggle("hide");
+  // text.focus();
 
-// // update todo
-// const updateTodo = (id) => {
-//   const text = document.querySelector(`.text${id}`);
+  text.addEventListener("keydown", (event) => {
+    if (event.code == "Enter") {
+      updateTodos();
+    }
+  });
 
-//   text.previousElementSibling.classList.toggle("hide");
-//   // text.focus();
-//   text.addEventListener("keydown", (event) => {
-//     if (event.code == "Enter") {
-//       updateTodo();
-//     }
-//   });
-//   if (!text.classList.contains("hide")) {
-//     updateTodo();
-//   }
-//   text.classList.toggle("hide");
+  if (!text.classList.contains("hide")) {
+    updateTodos();
+  }
+  text.classList.toggle("hide");
 
-//   const updateTodo = () => {
-//     let todo = todos.find((todo) => todo.id == id);
-//     todo.title = text.value;
-//     setDataToLocalStorage(todos);
-//   };
-// };
+  const updateTodos = async () => {
+    let todo = todos.find((todo) => todo.id == id);
+    todo.title = text.value;
 
-// getDataFromLocalstorage();
+    await axios.put(`/todos/${id}`, todo);
+    renderTodo(todos);
+  };
+};
 
 getTodos();

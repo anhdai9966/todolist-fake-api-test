@@ -2,12 +2,12 @@
   "todos": [
     {
       "id": 1,
-      "title": "Làm bài tập Javascript",
+      "title": "Làm bài tập Javascript 2",
       "status": false
     },
     {
       "id": 3,
-      "title": "Nấu cơm",
+      "title": "Nấu cơm update",
       "status": false
     },
     {
@@ -22,17 +22,17 @@
     },
     {
       "title": "Học thêm HTML",
-      "status": true,
+      "status": false,
       "id": 6
     },
     {
       "title": "Học thêm JS CSS",
-      "status": true,
+      "status": false,
       "id": 7
     },
     {
       "title": "Học thêm JS CSS HTML",
-      "status": true,
+      "status": false,
       "id": 8
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "title": "Học thêm String",
-      "status": true,
+      "status": false,
       "id": 11
     },
     {
